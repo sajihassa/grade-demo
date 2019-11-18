@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("button").click(function() {
+          let score = $("#score").val();
+          if (score >= 80) {
+            $("p").html("A");
+          } else if {score >= 70){
+              $("p").html("B");
+          } else{
+
+            $("p").html("F");
+          }
+
+        });
+        ;
+    </script>
+  </head>
+  <body>
+    <input type="text" id="score" />
+    <button>calculate</button>
+    <p>If you click on me, I will disappear.</p>
+  </body>
+</html>
